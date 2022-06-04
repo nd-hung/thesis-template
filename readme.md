@@ -6,9 +6,5 @@ The template was adopted from the one on [OverLeaf](https://www.overleaf.com/pro
 which also reused the one from [GitHub](https://github.com/thanhhungqb/thesis-template).
 We acknowledge aforementioned authors for sharing.
 
-Hung Nguyen
-Faculty of IT
-Nha Trang University
-
 
 
