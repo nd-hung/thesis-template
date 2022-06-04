@@ -9,7 +9,7 @@ Người dùng có thể [sử dụng mẫu này](https://www.overleaf.com/read/
 
 #### Sử dụng phần mềm soạn thảo LaTeX chuyên dụng
 Có thể tải mẫu báo cáo về máy tính bằng cách [vào đây](https://github.com/nd-hung/thesis-template), chọn Code -> Download ZIP để tải template về máy tính. 
-Sau đó sử dụng phần mềm soạn thảo LaTex, như [TeXnicCenter](https://www.texniccenter.org/) để biên tập.
+Sau đó sử dụng phần mềm soạn thảo LaTex, như [TeXnicCenter](https://www.texniccenter.org/), để biên tập.
 
 
 
