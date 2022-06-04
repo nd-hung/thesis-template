@@ -5,7 +5,7 @@
 ### Sử dụng
 Có thể sử dụng template này để biên soạn báo cáo trực tuyến trên Overleaf hoặc bằng phần mềm soạn thảo LaTeX trên máy tính.
 #### Sử dụng online trên [Overleaf](https://overleaf.com)
-Đây là cách dễ nhất, người dùng chỉ cần sử dụng mẫu báo cáo để biên soạn trực tiếp trên trang Overleaf mà không cần cài đặt gì. Để sử dụng, [chọn mẫu báo cáo này](https://www.overleaf.com/read/wcfnrcwkhcgy) để tạo báo cáo trên trang Overleaf.
+Đây là cách dễ nhất, người dùng chỉ cần sử dụng mẫu báo cáo để biên soạn trực tiếp trên trang Overleaf mà không cần cài đặt gì. Để sử dụng, [chọn mẫu báo cáo này](https://www.overleaf.com/read/wcfnrcwkhcgy) để soạn thảo trên Overleaf.
 
 #### Sử dụng phần mềm soạn thảo LaTeX chuyên dụng
 Có thể tải mẫu báo cáo về máy tính bằng cách [vào đây](https://github.com/nd-hung/thesis-template), chọn Code -> Download ZIP để tải template về máy tính. 
