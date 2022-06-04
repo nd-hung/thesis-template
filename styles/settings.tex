@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper,oneside]{book}
+%\usepackage{babel}
+\usepackage[utf8]{vietnam}
+\usepackage[utf8]{inputenc}
+\usepackage{tipa}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{styles/ipa}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+%\usepackage{algorithm2e}
+\usepackage{algorithm}
+%\usepackage[noend]{algpseudocode}
+\usepackage{algpseudocode}
+\makeatletter
+\renewcommand{\ALG@name}{Giải thuật}
+\renewcommand{\listalgorithmname}{Danh sách giải thuật}
+\makeatother
+% Reinsert missing \algbackskip
+\def\algbackskip{\hskip-\ALG@thistlm}
+\makeatother
+\usepackage{caption}
+\captionsetup[algorithm]{labelsep=colon}
+
+% Set line spacing
+\linespread{1.2} 
+% Set paragraph spacing
+\setlength{\parskip}{\baselineskip}%
+% Customize hyperlinks
+\usepackage{float}
+\usepackage{colortbl}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+\definecolor{carmine}{rgb}{0.59, 0.0, 0.09}
+\usepackage[colorlinks=true, urlcolor=carmine, citecolor=cobalt, linkcolor=carmine, pdfborder={0 0 0}]{hyperref}
+% Customize algorithm keywords
+\usepackage{styles/thesis}
+\usepackage{graphicx}
+\graphicspath{{figs/}}
+\setcounter{secnumdepth}{2}
+
+% Use the followings to skip blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% For code highlighting
+\usepackage{minted}

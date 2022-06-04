@@ -1,0 +1,110 @@
+\ProvidesPackage{thesis}
+\RequirePackage{graphicx}
+\RequirePackage{vietnam}
+\RequirePackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{indentfirst}
+% Paper size A4 (210 × 297 mm)
+\def\thesislayout{	
+	\geometry{
+		a4paper,
+		total={160mm,247mm},  
+		left=30mm,
+		top=25mm,
+	}
+}
+
+\newcommand{\@sdeptname}{KHOA CÔNG NGHỆ THÔNG TIN}
+\newcommand{\csdeptname}[1]{\renewcommand{\@sdeptname}{#1}}
+
+\newcommand{\@tname}{TÊN ĐỒ ÁN TỐT NGHIỆP}
+\newcommand{\ctname}[1]{\renewcommand{\@tname}{#1}}
+
+\newcommand{\@stuname}{Nguyễn Văn A\\Lê Thị B}
+\newcommand{\cstuname}[1]{\renewcommand{\@stuname}{#1}}
+
+\newcommand{\@sCouncil}{Công nghệ thông tin}
+\newcommand{\csCouncil}[1]{\renewcommand{\@sCouncil}{#1}}
+
+\newcommand{\@sSupervise}{TS. Nguyễn Văn A}
+\newcommand{\csSupervise}[1]{\renewcommand{\@sSupervise}{#1}}
+
+\newcommand{\@ttime}{\today}
+\newcommand{\cttime}[1]{\renewcommand{\@ttime}{#1}}
+ % report name (Đồ án/Khóa luận/Báo cáo...)
+\newcommand{\@rname}{ĐỒ ÁN TỐT NGHIỆP ĐẠI HỌC}
+\newcommand{\crname}[1]{\renewcommand{\@rname}{#1}}
+
+% Design cover page
+\def\coverpage{
+\pagestyle{empty}
+\begin{minipage}[b][25.5cm][t]{15cm}
+\begin{center}
+{\fontsize{14}{1}BỘ GIÁO DỤC VÀ ĐÀO TẠO}\\
+{\fontsize{15}{1}\textbf{TRƯỜNG ĐẠI HỌC NHA TRANG}} \\
+{\fontsize{14}{1}\textbf{\@sdeptname}}\\
+\textbf{-----------------------------------------}\\[2cm]
+\includegraphics[scale=0.2]{assets/ntu_logo.jpg}\\[1.5cm]
+    {\fontsize{15}{1}\selectfont \@rname }\\[2cm]
+    {\fontsize{16}{1}\selectfont \textbf{\parbox[c][3cm]{14cm}{\centering \@tname}} }\\[3.2cm]
+\end{center}
+
+{\fontsize{14}{1}\selectfont 
+
+\begin{flushleft}
+\hspace{1.5cm}\textbf{Sinh viên thực hiện\hspace{0.8cm}:\hspace{0.3cm}{\@stuname}}\\
+\vspace{0.2cm}
+\hspace{1.5cm}\textbf{Giảng viên hướng dẫn\hspace{0.2cm}:\hspace{0.3cm}{\@sSupervise}}\\
+\vspace{0.2cm}
+\hspace{1.5cm}\textbf{Ngành\hspace{3.5cm}:\hspace{0.3cm}{\@sCouncil}}
+\end{flushleft}
+}
+
+% Add space to push the date line to the end
+\vspace{4.5cm}
+\begin{center}
+ {\fontsize{14}{1}\selectfont Khánh Hòa - \@ttime }\\
+\end{center}
+\end{minipage}
+}
+
+\def\makeprintversion{}
+
+%% Remember to load babel before loading this package or define the command \abstractname!
+\makeatletter
+\newenvironment{abstract}{
+  \titlepage
+  \null\vfil
+  \@beginparpenalty\@lowpenalty
+  \begin{center}
+	\bfseries Tóm tắt
+	\@endparpenalty\@M
+  \end{center}}
+ {\par\vfil\null\endtitlepage}
+\makeatother
+
+\makeatletter
+\newenvironment{acknowledgments}{
+	%\titlepage \null\vfil
+	\small
+	\begin{center}
+	  {\bfseries Lời cảm ơn\vspace{-.5em}\vspace{\z@}}
+	\end{center}
+	\quotation
+  }{}
+\makeatother
+
+% Declaration
+\makeatletter
+\newenvironment{declaration}{
+	\small
+	\begin{center}
+	  {\bfseries Lời cam đoan\vspace{-.5em}\vspace{\z@}}
+	\end{center}
+	\quotation
+  }{}
+\makeatother	  
+
+% \renewcommand\lstlistingname{Algorithm}
+% \renewcommand\lstlistlistingname{Algorithms}

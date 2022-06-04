@@ -1,0 +1,75 @@
+% Settings for the document is in 'styles/settings.tex'
+\input{styles/settings}
+
+% Input thesis information
+\crname{ĐỒ ÁN TỐT NGHIỆP ĐẠI HỌC}
+% Nhập tên đồ án 
+\ctname{TÌM HIỂU THƯ VIỆN PYTORCH,\\ỨNG DỤNG XÂY DỰNG HỆ THỐNG NHẬN DẠNG LOÀI VẬT QUA ẢNH}
+% Họ và tên SV, MSSV
+\cstuname{Lê Trọng Kha (60135804)}
+% Tên ngành
+\csCouncil{Công nghệ thông tin}
+% Họ và tên GV hướng dấn
+\csSupervise{TS. Nguyễn Đình Hưng}
+% Năm thực hiện đồ án
+\cttime{2022}
+% Set thesis layout (defined in 'thesis.sty')
+\thesislayout
+
+\begin{document}
+% Add cover page to the document (defined in 'styles/thesis.sty')
+
+\coverpage
+
+% The \frontmatter command makes the pages numbered in lowercase roman, and makes chapters not numbered
+\frontmatter
+
+% Declaration page
+\begin{declaration}
+Tôi xin cam đoan đây là công trình nghiên cứu của riêng tôi dưới sự hướng dẫn của...Nếu phát hiện có bất kì sự gian lận nào, tôi xin hoàn toàn chịu trách nhiệm về nội dung đồ án của mình.
+\end{declaration}
+
+\newpage
+
+% Acknowledgement page
+\begin{acknowledgments}
+Tôi xin chân thành biết ơn thầy X đã hướng dẫn tận tình trong suốt quá trình thực hiện Đồ án tốt nghiệp này.
+
+
+Tôi xin bày tỏ lòng biết ơn sâu sắc nhất đến ba mẹ tôi...
+
+\end{acknowledgments}
+
+% Abstract page
+\begin{abstract}
+Đồ án này nhằm tìm hiểu các phương pháp và kỹ thuật tiên tiến của Trí tuệ nhân tạo và ứng dụng vào bài toán nhận dạng loài vật qua ảnh.
+\end{abstract}	
+
+% Bảng mục lục
+\tableofcontents
+% Danh mục bảng
+\listoftables
+% Danh mục hình
+\listoffigures
+% Danh mục giải thuật
+\listofalgorithms
+
+\mainmatter
+\fancyhead{}  % Clears all page headers and footers
+\renewcommand{\footrulewidth}{0.4pt}
+\pagestyle{fancy} 
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[R]{\chaptername\ \thechapter\ --\ \leftmark}
+
+\input{chapters/chapter1-tongquanvehocmay}
+\input{chapters/chapter2-mangneural}
+\input{chapters/chapter3-mohinhcnnnhandanganh}
+\input{chapters/chapter4-thucnghiemvadanhgia}
+\input{chapters/chapter5-ketluan}
+
+% Tài liệu tham khảo
+\bibliographystyle{plain} 
+\bibliography{refs}
+
+% Kết thúc
+\end{document}
