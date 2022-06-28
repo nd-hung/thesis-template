@@ -40,12 +40,25 @@
 \def\coverpage{
 \pagestyle{empty}
 \begin{minipage}[b][25.5cm][t]{15cm}
+
+\begin{tikzpicture}[remember picture, overlay]
+%   \draw[line width = 4pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+\draw [line width=0.75pt]
+    ($ (current page.north west) + (3.0cm,-2.0cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.5cm,1.5cm) $);
+\draw [line width=2.0pt]
+    ($ (current page.north west) + (3.15cm,-2.15cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.65cm,1.65cm) $); 
+\end{tikzpicture}
+
 \begin{center}
 {\fontsize{14}{1}BỘ GIÁO DỤC VÀ ĐÀO TẠO}\\
 {\fontsize{15}{1}\textbf{TRƯỜNG ĐẠI HỌC NHA TRANG}} \\
 {\fontsize{14}{1}\textbf{\@sdeptname}}\\
 \textbf{-----------------------------------------}\\[2cm]
-\includegraphics[scale=0.2]{assets/ntu_logo.jpg}\\[1.5cm]
+\includegraphics[scale=0.2]{assets/ntu_logo.jpg}\\[2cm]
     {\fontsize{15}{1}\selectfont \@rname }\\[2cm]
     {\fontsize{16}{1}\selectfont \textbf{\parbox[c][3cm]{14cm}{\centering \@tname}} }\\[3.2cm]
 \end{center}
@@ -62,7 +75,7 @@
 }
 
 % Add space to push the date line to the end
-\vspace{4.5cm}
+\vspace{3cm}
 \begin{center}
  {\fontsize{14}{1}\selectfont Khánh Hòa - \@ttime }\\
 \end{center}

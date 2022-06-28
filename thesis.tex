@@ -1,12 +1,12 @@
 % Settings for the document is in 'styles/settings.tex'
 \input{styles/settings}
 
-% Input thesis information
-\crname{ĐỒ ÁN TỐT NGHIỆP ĐẠI HỌC}
+% Loại báo cáo (Đồ án/Khóa luận tốt nghiệp đại học/cao học/tiến sĩ)
+\crname{ĐỒ ÁN TỐT NGHIỆP}
 % Nhập tên đồ án 
-\ctname{TÌM HIỂU THƯ VIỆN PYTORCH,\\ỨNG DỤNG XÂY DỰNG HỆ THỐNG NHẬN DẠNG LOÀI VẬT QUA ẢNH}
+\ctname{TÌM HIỂU MẠNG NEURAL TÍCH CHẬP \\ỨNG DỤNG XÂY DỰNG HỆ THỐNG NHẬN DẠNG LOÀI VẬT QUA ẢNH }
 % Họ và tên SV, MSSV
-\cstuname{Lê Trọng Kha (60135804)}
+\cstuname{Lê Trọng Kha (60131234)}
 % Tên ngành
 \csCouncil{Công nghệ thông tin}
 % Họ và tên GV hướng dấn
@@ -18,31 +18,36 @@
 
 \begin{document}
 % Add cover page to the document (defined in 'styles/thesis.sty')
-
 \coverpage
 
 % The \frontmatter command makes the pages numbered in lowercase roman, and makes chapters not numbered
 \frontmatter
 
-% Declaration page
+% Lời cam kết
 \begin{declaration}
-Tôi xin cam đoan đây là công trình nghiên cứu của riêng tôi dưới sự hướng dẫn của...Nếu phát hiện có bất kì sự gian lận nào, tôi xin hoàn toàn chịu trách nhiệm về nội dung đồ án của mình.
+
+Tôi cam đoan đây là công trình do tôi tự thực hiện dưới sự hướng dẫn của TS. Nguyễn Đình Hưng. Các nội dung nghiên cứu, số liệu và kết quả là trung thực. Các số liệu, công trình sử dụng của tác giả khác đều được trích dẫn nguồn gốc rõ ràng. Tất cả phần mềm, mã nguồn được sử dụng trong đồ án này đều có giấy phép miễn phí. 
+
+Nếu phát hiện có bất kì sự gian lận nào, tôi xin chịu hoàn toàn trách nhiệm.
+
+
+\begin{flushright}
+        {Lê Trọng Kha}
+\end{flushright}
 \end{declaration}
 
 \newpage
 
-% Acknowledgement page
+% Lời cảm ơn
 \begin{acknowledgments}
-Tôi xin chân thành biết ơn thầy X đã hướng dẫn tận tình trong suốt quá trình thực hiện Đồ án tốt nghiệp này.
+Công trình này có sử dụng một phần sản phẩm của \href{https://github.com/thanhhungqb/thesis-template}{Hung Vo} và \href{https://www.overleaf.com/project/62986f62b65db6f03abab3b8}{Ngo Thi Tien}. 
 
-
-Tôi xin bày tỏ lòng biết ơn sâu sắc nhất đến ba mẹ tôi...
 
 \end{acknowledgments}
 
-% Abstract page
+% Tóm tắt báo cáo
 \begin{abstract}
-Đồ án này nhằm tìm hiểu các phương pháp và kỹ thuật tiên tiến của Trí tuệ nhân tạo và ứng dụng vào bài toán nhận dạng loài vật qua ảnh.
+Tài liệu này cung cấp một bản thiết kế mẫu biên soạn đồ án/khóa luận tốt nghiệp đại học/sau đại học theo quy định của Trường đại học Nha Trang.
 \end{abstract}	
 
 % Bảng mục lục
@@ -61,11 +66,9 @@ Tôi xin bày tỏ lòng biết ơn sâu sắc nhất đến ba mẹ tôi...
 \renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
 \fancyhead[R]{\chaptername\ \thechapter\ --\ \leftmark}
 
-\input{chapters/chapter1-tongquanvehocmay}
-\input{chapters/chapter2-mangneural}
-\input{chapters/chapter3-mohinhcnnnhandanganh}
-\input{chapters/chapter4-thucnghiemvadanhgia}
-\input{chapters/chapter5-ketluan}
+\input{chapters/introduction}
+\input{chapters/document-preparation}
+\input{chapters/conclusion}
 
 % Tài liệu tham khảo
 \bibliographystyle{plain} 

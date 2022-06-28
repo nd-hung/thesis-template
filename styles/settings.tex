@@ -11,7 +11,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
-\usepackage{styles/ipa}
+%\usepackage{styles/ipa}
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
@@ -32,12 +32,15 @@
 \captionsetup[algorithm]{labelsep=colon}
 
 % Set line spacing
-\linespread{1.2} 
+\linespread{1.25} 
 % Set paragraph spacing
 \setlength{\parskip}{\baselineskip}%
+% Load the parskip package with skip and indent options
+\usepackage[skip=10pt plus1pt, indent=15 pt]{parskip}
 % Customize hyperlinks
 \usepackage{float}
 \usepackage{colortbl}
+\usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
 \definecolor{carmine}{rgb}{0.59, 0.0, 0.09}
 \usepackage[unicode, colorlinks=true, urlcolor=carmine, citecolor=cobalt, linkcolor=carmine, pdfborder={0 0 0}]{hyperref}
