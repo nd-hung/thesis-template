@@ -7,7 +7,7 @@ Có thể sử dụng template này theo một trong hai cách:
 - Biên tập trực tuyến trên Overleaf
 - Sử dụng phần mềm soạn thảo LaTeX trên máy tính
 
-#### Sử dụng online trên [Overleaf](https://overleaf.com)
+#### Biên tập trực tuyến trên [Overleaf](https://overleaf.com)
 Đây là cách dễ nhất, người dùng chỉ cần sử dụng mẫu báo cáo để biên soạn trực tiếp trên trang Overleaf mà không cần cài đặt gì. Để sử dụng, [chọn mẫu báo cáo này](https://www.overleaf.com/read/wcfnrcwkhcgy) để soạn thảo trên Overleaf.
 
 #### Sử dụng phần mềm soạn thảo LaTeX chuyên dụng
