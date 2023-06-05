@@ -1,6 +1,8 @@
-## Mẫu báo cáo đồ án tốt nghiệp đại học 
+## Mẫu báo cáo đồ án tốt nghiệp
 
-Đây là mẫu báo cáo đồ án tốt nghiệp bằng LaTeX theo quy định của Trường ĐH Nha Trang, nhằm hỗ trợ người học soạn thảo báo cáo chuyên nghiệp và thuận tiện hơn. Mẫu này có sử dụng lại một phần [mẫu báo cáo đồ án tốt nghiệp của Trường ĐH Bách khoa TP. Hồ Chí Minh](https://www.overleaf.com/project/62986f62b65db6f03abab3b8). Cám ơn [Hung Vo](https://github.com/thanhhungqb/thesis-template) và [Ngo Thi Tien](https://www.overleaf.com/project/62986f62b65db6f03abab3b8) đã chia sẻ.
+Đây là mẫu báo cáo đồ án tốt nghiệp bằng LaTeX theo quy định của Trường ĐH Nha Trang, nhằm hỗ trợ học viên/sinh viên soạn thảo báo cáo chuyên nghiệp và thuận tiện hơn. 
+
+Mẫu này có sử dụng lại một phần [mẫu báo cáo đồ án tốt nghiệp của Trường ĐH Bách khoa TP. Hồ Chí Minh](https://www.overleaf.com/project/62986f62b65db6f03abab3b8). Cám ơn [Hung Vo](https://github.com/thanhhungqb/thesis-template) và [Ngo Thi Tien](https://www.overleaf.com/project/62986f62b65db6f03abab3b8) đã chia sẻ.
 
 ### Sử dụng
 Có thể sử dụng template này theo một trong hai cách:
