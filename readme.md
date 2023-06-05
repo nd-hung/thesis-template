@@ -8,7 +8,7 @@ Mẫu này có sử dụng lại một phần [mẫu báo cáo đồ án tốt n
 
 ### Sử dụng
 Có thể sử dụng template này theo một trong hai cách:
-- Biên tập trực tuyến trên Overleaf
+- Soạn thảo trực tuyến trên Overleaf
 - Sử dụng phần mềm soạn thảo LaTeX trên máy tính
 
 #### Biên tập trực tuyến trên [Overleaf](https://overleaf.com)
